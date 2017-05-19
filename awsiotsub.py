@@ -33,11 +33,11 @@ mqttc.on_message = on_message
 
 awshost = "data.iot.eu-west-1.amazonaws.com"
 awsport = 8883
-clientId = "myThingName"
-thingName = "myThingName"
+clientId = "GrodgeMACPaho"
+thingName = "GrodgeMACPaho"
 caPath = "aws-iot-rootCA.crt"
-certPath = "cert.pem"
-keyPath = "privkey.pem"
+certPath = "grodgemacpahocert.pem"
+keyPath = "grodgemacpahoprivkey.pem"
 
 mqttc.tls_set(caPath, certfile=certPath, keyfile=keyPath, cert_reqs=ssl.CERT_REQUIRED, tls_version=ssl.PROTOCOL_TLSv1_2, ciphers=None)
 
